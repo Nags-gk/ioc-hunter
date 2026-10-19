@@ -1,0 +1,106 @@
+{
+  "host": "web01",
+  "host_ip": "10.0.4.12",
+  "iocs": {
+    "ip": [
+      "192.0.2.200",
+      "198.51.100.10",
+      "198.51.100.23",
+      "198.51.100.44",
+      "203.0.113.77",
+      "203.0.113.81",
+      "203.0.113.90"
+    ],
+    "domain": [
+      "alligwnjhqeqw.xyz",
+      "gkjopwphforlfg.info",
+      "gnpbrstxiybnn.info",
+      "hvnbmgytdyrh.top",
+      "iubvtzzmnntvi.xyz",
+      "ivqvlemalpiuzow.info",
+      "jdihkllqszyqfamnb.info",
+      "kyplujfephzr.top",
+      "lrqeakzviudh.info",
+      "mzgsrlluxmsf.top",
+      "nlfagptopfbvtkohk.top",
+      "owzgxjqiavawaerin.top",
+      "pbnzljnutjmztk.top",
+      "ppulivoxfojtbikq.info",
+      "qomtqwhoozbyh.xyz",
+      "ravteolfkgbsg.top",
+      "rktrfwbrfqcmt.xyz",
+      "taiyzkfhzaqbh.info",
+      "tpptmrauxcgzvillw.xyz",
+      "update-cdn-sync.top",
+      "vkevcxjjwfyv.info",
+      "vkvmzcabvqhcnodv.xyz",
+      "weazbcnrgzmzdwlgj.xyz",
+      "wibnipltuxbq.xyz",
+      "wvrpttdgrtwvmshcnl.xyz",
+      "wyzmqvovbdrsvjly.info"
+    ],
+    "user": [
+      "deploy",
+      "sysupdate"
+    ],
+    "file": [
+      "/tmp/.i.sh",
+      "/usr/local/bin/.kworker",
+      "/etc/.kw.json"
+    ]
+  },
+  "stages": [
+    {
+      "stage": "brute_force",
+      "technique": "T1110.001",
+      "first_seen": "2026-09-14T10:02:00+00:00"
+    },
+    {
+      "stage": "valid_account_login",
+      "technique": "T1078",
+      "first_seen": "2026-09-14T10:38:30+00:00"
+    },
+    {
+      "stage": "ingress_tool_transfer",
+      "technique": "T1105",
+      "first_seen": "2026-09-14T10:41:30+00:00"
+    },
+    {
+      "stage": "unix_shell_execution",
+      "technique": "T1059.004",
+      "first_seen": "2026-09-14T10:42:10+00:00"
+    },
+    {
+      "stage": "create_local_account",
+      "technique": "T1136.001",
+      "first_seen": "2026-09-14T10:42:30+00:00"
+    },
+    {
+      "stage": "cron_persistence",
+      "technique": "T1053.003",
+      "first_seen": "2026-09-14T10:44:00+00:00"
+    },
+    {
+      "stage": "resource_hijacking",
+      "technique": "T1496",
+      "first_seen": "2026-09-14T10:45:00+00:00"
+    },
+    {
+      "stage": "dga_lookups",
+      "technique": "T1568.002",
+      "first_seen": "2026-09-14T10:45:00+00:00"
+    },
+    {
+      "stage": "exfiltration",
+      "technique": "T1041",
+      "first_seen": "2026-09-15T02:37:00+00:00"
+    },
+    {
+      "stage": "backdoor_login",
+      "technique": "T1078",
+      "first_seen": "2026-09-15T19:05:00+00:00"
+    }
+  ],
+  "compromised_account": "deploy",
+  "dga_family": "random"
+}

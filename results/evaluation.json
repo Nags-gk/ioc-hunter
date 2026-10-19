@@ -1,0 +1,84 @@
+{
+  "random": {
+    "cases": 10,
+    "iocs": {
+      "ip": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "found": 70,
+        "expected": 70
+      },
+      "domain": {
+        "recall": 0.9885,
+        "precision": 1.0,
+        "found": 257,
+        "expected": 260
+      },
+      "user": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "found": 20,
+        "expected": 20
+      },
+      "file": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "found": 30,
+        "expected": 30
+      }
+    },
+    "stage_detection": {
+      "brute_force": 1.0,
+      "valid_account_login": 1.0,
+      "ingress_tool_transfer": 1.0,
+      "unix_shell_execution": 1.0,
+      "create_local_account": 1.0,
+      "cron_persistence": 1.0,
+      "resource_hijacking": 1.0,
+      "dga_lookups": 1.0,
+      "exfiltration": 1.0,
+      "backdoor_login": 1.0
+    }
+  },
+  "dictionary": {
+    "cases": 10,
+    "iocs": {
+      "ip": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "found": 70,
+        "expected": 70
+      },
+      "domain": {
+        "recall": 0.4962,
+        "precision": 1.0,
+        "found": 129,
+        "expected": 260
+      },
+      "user": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "found": 20,
+        "expected": 20
+      },
+      "file": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "found": 30,
+        "expected": 30
+      }
+    },
+    "stage_detection": {
+      "brute_force": 1.0,
+      "valid_account_login": 1.0,
+      "ingress_tool_transfer": 1.0,
+      "unix_shell_execution": 1.0,
+      "create_local_account": 1.0,
+      "cron_persistence": 1.0,
+      "resource_hijacking": 1.0,
+      "dga_lookups": 1.0,
+      "exfiltration": 1.0,
+      "backdoor_login": 1.0
+    }
+  }
+}

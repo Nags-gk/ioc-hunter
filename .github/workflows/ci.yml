@@ -1,0 +1,52 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e . pytest ruff shellcheck-py
+      - run: ruff check .
+      - run: shellcheck scripts/*.sh
+      - run: pytest -q
+      - name: Investigate the example case
+        run: iochunter investigate examples/case-web01 --out results/case
+      - name: Hunt the real OpenSSH log (Loghub, hash-verified)
+        run: iochunter loghub "$(scripts/fetch_loghub.sh data | tail -1)" --out results/loghub
+      - name: Shell triage on the same log
+        run: scripts/ssh-triage.sh data/SSH.log | tee results/loghub/ssh-triage.txt
+      - name: Evaluate over generated intrusions
+        run: iochunter evaluate --cases 20 --out results
+      - run: python scripts/build_web.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web
+          path: web/
+  pages:
+    if: github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: web
+          path: web
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,17 @@
+title: SSH authentication failure
+name: ssh_auth_failure
+id: 43e7b49d-707c-58f3-a47b-b018c5d019a2
+status: stable
+description: One failed SSH password attempt or attempt on a non-existent user. Building block for the brute-force correlation.
+author: Nagaraj Gireppa Kanni
+date: 2026-10-19
+tags: [attack.credential_access, attack.t1110.001]
+logsource: {product: linux, service: auth}
+detection:
+  selection:
+    action: [failed_password, failed_password_invalid_user, invalid_user, auth_failure]
+  filter_no_ip:
+    src_ip: null
+  condition: selection and not filter_no_ip
+falsepositives: [Users mistyping passwords]
+level: low

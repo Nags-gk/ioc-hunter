@@ -1,0 +1,734 @@
+{
+  "type": "bundle",
+  "id": "bundle--657b11ea-bda5-534a-8726-eac120c771c6",
+  "objects": [
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--813cffb3-b069-5d93-956f-40f22f20ec84",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "ip 203.0.113.77",
+      "pattern": "[ipv4-addr:value = '203.0.113.77']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:02:00.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "brute_force_then_success",
+        "sigma:ssh_bruteforce"
+      ],
+      "confidence": 90,
+      "description": "Raised by brute_force_then_success, sigma:ssh_bruteforce in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--40889e5d-9379-51b2-a064-b1ed325d3a0b",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "ip 203.0.113.81",
+      "pattern": "[ipv4-addr:value = '203.0.113.81']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:13:03.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "linked_bruteforce_sources",
+        "sigma:ssh_bruteforce"
+      ],
+      "confidence": 75,
+      "description": "Raised by linked_bruteforce_sources, sigma:ssh_bruteforce in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c3c1a964-0c1e-5356-ab14-e012a761955a",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "ip 203.0.113.90",
+      "pattern": "[ipv4-addr:value = '203.0.113.90']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:13:03.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "linked_bruteforce_sources",
+        "sigma:ssh_bruteforce"
+      ],
+      "confidence": 75,
+      "description": "Raised by linked_bruteforce_sources, sigma:ssh_bruteforce in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--6eced10b-2c58-5b64-a783-ffa41c80c0e5",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "ip 198.51.100.10",
+      "pattern": "[ipv4-addr:value = '198.51.100.10']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:41:30.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "stager_download"
+      ],
+      "confidence": 75,
+      "description": "Raised by stager_download in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--90116a67-e2f3-5571-87d3-7f3e065d9dba",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "ip 198.51.100.23",
+      "pattern": "[ipv4-addr:value = '198.51.100.23']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:42:30.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "backdoor_account_login"
+      ],
+      "confidence": 90,
+      "description": "Raised by backdoor_account_login in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--22e079ab-e5b6-5050-b920-c17e28189053",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "ip 198.51.100.44",
+      "pattern": "[ipv4-addr:value = '198.51.100.44']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:00.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "beaconing"
+      ],
+      "confidence": 75,
+      "description": "Raised by beaconing in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--bf8e2790-498f-5290-97dd-3d28f5ac822d",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "ip 192.0.2.200",
+      "pattern": "[ipv4-addr:value = '192.0.2.200']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-15T02:37:00.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "large_upload"
+      ],
+      "confidence": 90,
+      "description": "Raised by large_upload in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--26375c51-9b48-522f-8792-95f4ee0bffe6",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain update-cdn-sync.top",
+      "pattern": "[domain-name:value = 'update-cdn-sync.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:41:30.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "stager_download"
+      ],
+      "confidence": 75,
+      "description": "Raised by stager_download in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b5626dde-6ccf-5f17-90b5-4ebf52f86f08",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain alligwnjhqeqw.xyz",
+      "pattern": "[domain-name:value = 'alligwnjhqeqw.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9d91610f-cafb-5f37-a82c-9b6eaee0c580",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain gkjopwphforlfg.info",
+      "pattern": "[domain-name:value = 'gkjopwphforlfg.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c4e02d37-3152-5216-a067-8b0abba82d95",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain gnpbrstxiybnn.info",
+      "pattern": "[domain-name:value = 'gnpbrstxiybnn.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--111aa3c9-f70b-5b36-b3a2-cf106fdc1909",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain hvnbmgytdyrh.top",
+      "pattern": "[domain-name:value = 'hvnbmgytdyrh.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--80ca7af9-2e30-597d-b790-1dc1d7f37566",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain iubvtzzmnntvi.xyz",
+      "pattern": "[domain-name:value = 'iubvtzzmnntvi.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--cbb61523-e676-5514-8239-6668d5ca5498",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain ivqvlemalpiuzow.info",
+      "pattern": "[domain-name:value = 'ivqvlemalpiuzow.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0f78183b-9b93-5b20-9366-840d447b0b2f",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain jdihkllqszyqfamnb.info",
+      "pattern": "[domain-name:value = 'jdihkllqszyqfamnb.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--82073641-e455-5ffa-a570-12a18a1f2440",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain kyplujfephzr.top",
+      "pattern": "[domain-name:value = 'kyplujfephzr.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3faeed54-5980-52c8-969a-5fe3a1117bb9",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain lrqeakzviudh.info",
+      "pattern": "[domain-name:value = 'lrqeakzviudh.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--bd080096-c500-5146-9fad-0b66b533be19",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain mzgsrlluxmsf.top",
+      "pattern": "[domain-name:value = 'mzgsrlluxmsf.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8e4698dd-f6d4-5436-9cff-cf6e719e742b",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain nlfagptopfbvtkohk.top",
+      "pattern": "[domain-name:value = 'nlfagptopfbvtkohk.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c6139014-b41f-5b0a-90f8-829e67835971",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain owzgxjqiavawaerin.top",
+      "pattern": "[domain-name:value = 'owzgxjqiavawaerin.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--96ae94e7-c2bc-5a1e-8d5a-6355eefae5a1",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain pbnzljnutjmztk.top",
+      "pattern": "[domain-name:value = 'pbnzljnutjmztk.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--e663a87e-742e-51f0-b939-a886dde5ec01",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain ppulivoxfojtbikq.info",
+      "pattern": "[domain-name:value = 'ppulivoxfojtbikq.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--fb4f0844-ea5f-5f70-a331-0752d4672a2e",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain qomtqwhoozbyh.xyz",
+      "pattern": "[domain-name:value = 'qomtqwhoozbyh.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2c302e46-de75-5c1c-925a-c0358e95f726",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain ravteolfkgbsg.top",
+      "pattern": "[domain-name:value = 'ravteolfkgbsg.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--025ddb6d-370a-5ded-b7e4-c86be0cbe36e",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain rktrfwbrfqcmt.xyz",
+      "pattern": "[domain-name:value = 'rktrfwbrfqcmt.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--00de6366-0e15-5976-b921-c8ee50067673",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain taiyzkfhzaqbh.info",
+      "pattern": "[domain-name:value = 'taiyzkfhzaqbh.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ff5924b6-2572-57aa-9623-ecd039e23d9e",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain tpptmrauxcgzvillw.xyz",
+      "pattern": "[domain-name:value = 'tpptmrauxcgzvillw.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b8582bd1-226b-51c2-8214-55f3dd8ca346",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain vkevcxjjwfyv.info",
+      "pattern": "[domain-name:value = 'vkevcxjjwfyv.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8cecd603-4caf-5b07-932c-5beb5862bed7",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain vkvmzcabvqhcnodv.xyz",
+      "pattern": "[domain-name:value = 'vkvmzcabvqhcnodv.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8b8e5a5d-e3f4-5dce-b26d-349aab6ac38b",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain weazbcnrgzmzdwlgj.xyz",
+      "pattern": "[domain-name:value = 'weazbcnrgzmzdwlgj.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--27ea8235-13b4-568f-9483-a2562607fa84",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain wibnipltuxbq.xyz",
+      "pattern": "[domain-name:value = 'wibnipltuxbq.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b2326f4b-e36a-55e4-904b-b17791ac36d9",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain wvrpttdgrtwvmshcnl.xyz",
+      "pattern": "[domain-name:value = 'wvrpttdgrtwvmshcnl.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f5d7d9e9-6a99-5c99-bbc8-890b4fe94b49",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "domain wyzmqvovbdrsvjly.info",
+      "pattern": "[domain-name:value = 'wyzmqvovbdrsvjly.info']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:45:24.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "dga_lookups"
+      ],
+      "confidence": 75,
+      "description": "Raised by dga_lookups in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a0c2f86f-cf5a-5460-aa6c-5f9fe6927a6f",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "user deploy",
+      "pattern": "[user-account:account_login = 'deploy']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:02:00.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "brute_force_then_success",
+        "sigma:sudo_download_execute"
+      ],
+      "confidence": 90,
+      "description": "Raised by brute_force_then_success, sigma:sudo_download_execute in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8fe4128d-e4db-52d4-be16-c00c403c3730",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "user sysupdate",
+      "pattern": "[user-account:account_login = 'sysupdate']",
+      "pattern_type": "stix",
+      "valid_from": "2026-09-14T10:42:30.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "backdoor_account_login",
+        "sigma:linux_uid0_account",
+        "sigma:linux_useradd"
+      ],
+      "confidence": 90,
+      "description": "Raised by backdoor_account_login, sigma:linux_uid0_account, sigma:linux_useradd in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f2d6b783-f4b4-54ea-bcd0-fe5cfbc8b522",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "file /etc/.kw.json",
+      "pattern": "[file:name = '.kw.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-19T23:39:39.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "command_paths"
+      ],
+      "confidence": 75,
+      "description": "Raised by command_paths in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--fa4efd4e-5a9f-5026-990b-067d6b30434f",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "file /tmp/.i.sh",
+      "pattern": "[file:name = '.i.sh']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-19T23:39:39.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "command_paths"
+      ],
+      "confidence": 75,
+      "description": "Raised by command_paths in examples/case-web01"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3a0b602c-32cc-59f5-8b17-3d7c54f94963",
+      "created": "2026-10-19T23:39:39.000Z",
+      "modified": "2026-10-19T23:39:39.000Z",
+      "name": "file /usr/local/bin/.kworker",
+      "pattern": "[file:name = '.kworker']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-19T23:39:39.000Z",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "labels": [
+        "command_paths"
+      ],
+      "confidence": 75,
+      "description": "Raised by command_paths in examples/case-web01"
+    }
+  ]
+}

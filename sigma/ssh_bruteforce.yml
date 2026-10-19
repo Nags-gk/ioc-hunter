@@ -1,0 +1,15 @@
+title: SSH brute force from one source
+id: 99419dc0-1c01-5faf-992c-1b0823b2e3f5
+status: stable
+description: Twenty or more SSH authentication failures from one IP within ten minutes.
+author: Nagaraj Gireppa Kanni
+date: 2026-10-19
+tags: [attack.credential_access, attack.t1110.001]
+correlation:
+  type: event_count
+  rules: [ssh_auth_failure]
+  group-by: [src_ip]
+  timespan: 10m
+  condition: {gte: 20}
+falsepositives: [A misconfigured automation retrying a stale password]
+level: medium

@@ -1,0 +1,785 @@
+{
+  "source": {
+    "url": "https://zenodo.org/records/8196385/files/SSH.tar.gz",
+    "sha256": "296610a35773f58b7c295e5407fc5ccdf48beb3c544fc14a6309addf904a2712",
+    "base_year_placeholder": 2015
+  },
+  "stats": {
+    "lines": 655147,
+    "t0": "2015-12-10 06:55:46+00:00",
+    "t1": "2016-01-07 17:22:01+00:00",
+    "failures": 367393,
+    "failing_sources": 1011,
+    "successes": 182,
+    "success_accounts": 9,
+    "success_sources": 42,
+    "root_failures": 316601
+  },
+  "sigma_hits": {
+    "cron_hidden_binary": 0,
+    "linux_uid0_account": 0,
+    "linux_useradd": 0,
+    "ssh_auth_failure": 366211,
+    "ssh_root_login": 0,
+    "sudo_download_execute": 0,
+    "ssh_bruteforce": 2066
+  },
+  "top_sources": [
+    {
+      "src_ip": "59.63.188.30",
+      "attempts": 43150,
+      "usernames": 1,
+      "first_seen": "2016-01-03 10:07:04+00:00",
+      "last_seen": "2016-01-05 12:22:59+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "183.63.110.206",
+      "attempts": 34680,
+      "usernames": 1,
+      "first_seen": "2016-01-02 19:15:54+00:00",
+      "last_seen": "2016-01-03 10:08:41+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "183.238.178.195",
+      "attempts": 29038,
+      "usernames": 1,
+      "first_seen": "2015-12-12 02:13:15+00:00",
+      "last_seen": "2015-12-16 21:22:03+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "139.219.191.138",
+      "attempts": 22115,
+      "usernames": 51,
+      "first_seen": "2015-12-30 04:23:06+00:00",
+      "last_seen": "2015-12-30 11:33:57+00:00",
+      "invalid_user_attempts": 822
+    },
+    {
+      "src_ip": "183.62.140.253",
+      "attempts": 22115,
+      "usernames": 51,
+      "first_seen": "2015-12-10 10:54:27+00:00",
+      "last_seen": "2015-12-10 17:19:17+00:00",
+      "invalid_user_attempts": 822
+    },
+    {
+      "src_ip": "58.242.83.25",
+      "attempts": 21575,
+      "usernames": 1,
+      "first_seen": "2016-01-01 08:48:40+00:00",
+      "last_seen": "2016-01-02 17:13:42+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "183.192.189.131",
+      "attempts": 17510,
+      "usernames": 1,
+      "first_seen": "2015-12-11 17:27:33+00:00",
+      "last_seen": "2016-01-03 12:36:43+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "183.129.154.138",
+      "attempts": 17340,
+      "usernames": 1,
+      "first_seen": "2015-12-17 00:26:18+00:00",
+      "last_seen": "2015-12-17 05:58:55+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "183.63.172.52",
+      "attempts": 15012,
+      "usernames": 1,
+      "first_seen": "2015-12-11 17:39:16+00:00",
+      "last_seen": "2015-12-16 13:56:37+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "218.65.30.30",
+      "attempts": 12563,
+      "usernames": 1,
+      "first_seen": "2016-01-01 14:23:29+00:00",
+      "last_seen": "2016-01-02 11:12:24+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "218.87.109.156",
+      "attempts": 10706,
+      "usernames": 1,
+      "first_seen": "2016-01-03 15:01:56+00:00",
+      "last_seen": "2016-01-04 12:17:10+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "182.100.67.120",
+      "attempts": 9271,
+      "usernames": 1,
+      "first_seen": "2016-01-01 20:32:20+00:00",
+      "last_seen": "2016-01-02 11:31:34+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "14.116.171.251",
+      "attempts": 8924,
+      "usernames": 1,
+      "first_seen": "2015-12-13 03:18:39+00:00",
+      "last_seen": "2015-12-15 05:32:36+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "183.129.170.130",
+      "attempts": 7760,
+      "usernames": 1,
+      "first_seen": "2015-12-17 08:41:12+00:00",
+      "last_seen": "2015-12-17 11:08:22+00:00",
+      "invalid_user_attempts": 0
+    },
+    {
+      "src_ip": "182.100.67.52",
+      "attempts": 5125,
+      "usernames": 1,
+      "first_seen": "2015-12-30 08:37:24+00:00",
+      "last_seen": "2016-01-05 07:32:31+00:00",
+      "invalid_user_attempts": 0
+    }
+  ],
+  "success_sources": [
+    {
+      "src_ip": "218.17.80.182",
+      "logged_in_as": "['zachary']",
+      "failures": 13,
+      "tried": "['zachary']"
+    },
+    {
+      "src_ip": "111.222.107.90",
+      "logged_in_as": "['hxu']",
+      "failures": 11,
+      "tried": "['hxu']"
+    },
+    {
+      "src_ip": "123.255.103.142",
+      "logged_in_as": "['curi']",
+      "failures": 7,
+      "tried": "['curi']"
+    },
+    {
+      "src_ip": "113.99.127.215",
+      "logged_in_as": "['suyuxin']",
+      "failures": 2,
+      "tried": "['suyuxin']"
+    },
+    {
+      "src_ip": "183.62.156.108",
+      "logged_in_as": "['fztu' 'suyuxin' 'jmzhu']",
+      "failures": 2,
+      "tried": "['root']"
+    },
+    {
+      "src_ip": "61.187.54.9",
+      "logged_in_as": "['curi']",
+      "failures": 2,
+      "tried": "['curi']"
+    },
+    {
+      "src_ip": "137.189.204.253",
+      "logged_in_as": "['hxu']",
+      "failures": 1,
+      "tried": "['hxu']"
+    },
+    {
+      "src_ip": "137.189.204.138",
+      "logged_in_as": "['hxu']",
+      "failures": 1,
+      "tried": "['hxu']"
+    },
+    {
+      "src_ip": "137.189.90.232",
+      "logged_in_as": "['curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "183.11.69.89",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "119.137.60.156",
+      "logged_in_as": "['fztu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "183.11.36.159",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.204.220",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "112.96.33.40",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.241.248",
+      "logged_in_as": "['curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.206.243",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "119.137.63.195",
+      "logged_in_as": "['fztu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.204.155",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.204.236",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "113.116.236.34",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.241.19",
+      "logged_in_as": "['curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.207.18",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.88.215",
+      "logged_in_as": "['yuewang' 'suyuxin' 'curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "119.137.62.123",
+      "logged_in_as": "['fztu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.206.152",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "112.96.173.55",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "113.118.187.34",
+      "logged_in_as": "['fztu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.240.159",
+      "logged_in_as": "['xxchen']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "222.240.177.42",
+      "logged_in_as": "['curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "203.218.70.64",
+      "logged_in_as": "['xxchen']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "218.18.43.243",
+      "logged_in_as": "['suyuxin']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "67.160.100.130",
+      "logged_in_as": "['curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "183.11.39.245",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "73.239.249.49",
+      "logged_in_as": "['tzhao']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "123.255.103.215",
+      "logged_in_as": "['curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "218.18.42.17",
+      "logged_in_as": "['suyuxin']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.204.246",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.205.44",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "119.137.62.142",
+      "logged_in_as": "['fztu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "222.125.40.98",
+      "logged_in_as": "['jmzhu']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "14.17.22.31",
+      "logged_in_as": "['curi']",
+      "failures": 0,
+      "tried": null
+    },
+    {
+      "src_ip": "137.189.207.28",
+      "logged_in_as": "['hxu']",
+      "failures": 0,
+      "tried": null
+    }
+  ],
+  "top_usernames": [
+    {
+      "user": "root",
+      "n": 176784
+    },
+    {
+      "user": "admin",
+      "n": 11114
+    },
+    {
+      "user": "test",
+      "n": 1086
+    },
+    {
+      "user": "oracle",
+      "n": 978
+    },
+    {
+      "user": "support",
+      "n": 937
+    },
+    {
+      "user": "user",
+      "n": 718
+    },
+    {
+      "user": "pi",
+      "n": 674
+    },
+    {
+      "user": "nagios",
+      "n": 592
+    },
+    {
+      "user": "guest",
+      "n": 518
+    },
+    {
+      "user": "postgres",
+      "n": 432
+    },
+    {
+      "user": "0",
+      "n": 416
+    },
+    {
+      "user": "ubnt",
+      "n": 398
+    },
+    {
+      "user": "1234",
+      "n": 386
+    },
+    {
+      "user": "0101",
+      "n": 382
+    },
+    {
+      "user": "zabbix",
+      "n": 354
+    }
+  ],
+  "daily": [
+    {
+      "day": "2015-12-10 00:00:00+00:00",
+      "failures": 25415,
+      "sources": 54
+    },
+    {
+      "day": "2015-12-11 00:00:00+00:00",
+      "failures": 14914,
+      "sources": 82
+    },
+    {
+      "day": "2015-12-12 00:00:00+00:00",
+      "failures": 27270,
+      "sources": 93
+    },
+    {
+      "day": "2015-12-13 00:00:00+00:00",
+      "failures": 6762,
+      "sources": 80
+    },
+    {
+      "day": "2015-12-14 00:00:00+00:00",
+      "failures": 3004,
+      "sources": 86
+    },
+    {
+      "day": "2015-12-15 00:00:00+00:00",
+      "failures": 10528,
+      "sources": 73
+    },
+    {
+      "day": "2015-12-16 00:00:00+00:00",
+      "failures": 17679,
+      "sources": 97
+    },
+    {
+      "day": "2015-12-17 00:00:00+00:00",
+      "failures": 28147,
+      "sources": 81
+    },
+    {
+      "day": "2015-12-18 00:00:00+00:00",
+      "failures": 3024,
+      "sources": 82
+    },
+    {
+      "day": "2015-12-19 00:00:00+00:00",
+      "failures": 2604,
+      "sources": 76
+    },
+    {
+      "day": "2015-12-20 00:00:00+00:00",
+      "failures": 3015,
+      "sources": 85
+    },
+    {
+      "day": "2015-12-21 00:00:00+00:00",
+      "failures": 2908,
+      "sources": 97
+    },
+    {
+      "day": "2015-12-22 00:00:00+00:00",
+      "failures": 3921,
+      "sources": 89
+    },
+    {
+      "day": "2015-12-23 00:00:00+00:00",
+      "failures": 1410,
+      "sources": 56
+    },
+    {
+      "day": "2015-12-29 00:00:00+00:00",
+      "failures": 583,
+      "sources": 26
+    },
+    {
+      "day": "2015-12-30 00:00:00+00:00",
+      "failures": 25279,
+      "sources": 69
+    },
+    {
+      "day": "2015-12-31 00:00:00+00:00",
+      "failures": 6911,
+      "sources": 73
+    },
+    {
+      "day": "2016-01-01 00:00:00+00:00",
+      "failures": 20606,
+      "sources": 69
+    },
+    {
+      "day": "2016-01-02 00:00:00+00:00",
+      "failures": 41361,
+      "sources": 80
+    },
+    {
+      "day": "2016-01-03 00:00:00+00:00",
+      "failures": 59338,
+      "sources": 73
+    },
+    {
+      "day": "2016-01-04 00:00:00+00:00",
+      "failures": 42703,
+      "sources": 69
+    },
+    {
+      "day": "2016-01-05 00:00:00+00:00",
+      "failures": 13451,
+      "sources": 74
+    },
+    {
+      "day": "2016-01-06 00:00:00+00:00",
+      "failures": 3434,
+      "sources": 87
+    },
+    {
+      "day": "2016-01-07 00:00:00+00:00",
+      "failures": 3126,
+      "sources": 70
+    }
+  ],
+  "brute_force_successes": [],
+  "leads": [
+    {
+      "hunt": "multi_account_source",
+      "technique": "T1078",
+      "severity": "medium",
+      "entity": "183.62.156.108",
+      "first_seen": "2015-12-10 16:17:52+00:00",
+      "last_seen": "2016-01-02 11:20:21+00:00",
+      "summary": "183.62.156.108 logged in successfully to 3 accounts (fztu, jmzhu, suyuxin); check for shared NAT before treating as compromise",
+      "iocs": {
+        "ip": [
+          "183.62.156.108"
+        ],
+        "user": [
+          "fztu",
+          "jmzhu",
+          "suyuxin"
+        ]
+      },
+      "evidence": [
+        33205,
+        396693,
+        232855,
+        233684,
+        234193
+      ]
+    },
+    {
+      "hunt": "multi_account_source",
+      "technique": "T1078",
+      "severity": "medium",
+      "entity": "137.189.88.215",
+      "first_seen": "2015-12-12 14:20:38+00:00",
+      "last_seen": "2016-01-07 11:01:03+00:00",
+      "summary": "137.189.88.215 logged in successfully to 3 accounts (curi, suyuxin, yuewang); check for shared NAT before treating as compromise",
+      "iocs": {
+        "ip": [
+          "137.189.88.215"
+        ],
+        "user": [
+          "curi",
+          "suyuxin",
+          "yuewang"
+        ]
+      },
+      "evidence": [
+        102164,
+        406126,
+        406140,
+        406142,
+        652814,
+        215821,
+        215823,
+        221418,
+        221420,
+        221424,
+        221426,
+        582193
+      ]
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "3 sources",
+      "first_seen": "2015-12-10 08:24:32+00:00",
+      "last_seen": "2016-01-07 14:17:35+00:00",
+      "summary": "3 sources replayed the same 16-username list (0, 0101, 1234, admin, default, ftp...); attempts per source: 846, 1058, 1191; active 12-10 to 01-07",
+      "iocs": {
+        "ip": [
+          "5.188.10.156",
+          "5.188.10.180",
+          "5.188.10.182"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "2 sources",
+      "first_seen": "2015-12-10 10:54:27+00:00",
+      "last_seen": "2015-12-30 11:33:57+00:00",
+      "summary": "2 sources replayed the same 51-username list (123, 123456, Test, apache, apache1, apache2...); attempts per source: 21704; active 12-10 to 12-30",
+      "iocs": {
+        "ip": [
+          "139.219.191.138",
+          "183.62.140.253"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "2 sources",
+      "first_seen": "2015-12-31 07:21:53+00:00",
+      "last_seen": "2016-01-02 16:12:30+00:00",
+      "summary": "2 sources replayed the same 52-username list (CentOS, PlcmSpIp, admin, apache, cron, debian...); attempts per source: 809, 918; active 12-31 to 01-02",
+      "iocs": {
+        "ip": [
+          "1.34.138.144",
+          "183.65.30.2"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "8 sources",
+      "first_seen": "2015-12-12 23:54:19+00:00",
+      "last_seen": "2016-01-04 11:30:35+00:00",
+      "summary": "8 sources replayed the same 18-username list (admin, alarm, cirros, debian, ethos, guest...); attempts per source: 122; active 12-12 to 01-04",
+      "iocs": {
+        "ip": [
+          "158.140.138.225",
+          "190.196.234.141",
+          "187.119.142.14",
+          "66.171.88.199",
+          "103.224.166.40",
+          "132.147.49.216",
+          "118.96.253.193",
+          "94.167.233.38"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "2 sources",
+      "first_seen": "2016-01-04 04:13:10+00:00",
+      "last_seen": "2016-01-04 07:44:52+00:00",
+      "summary": "2 sources replayed the same 13-username list (admin, baku, debian, guest, oracle, pi...); attempts per source: 101; active 01-04 to 01-04",
+      "iocs": {
+        "ip": [
+          "179.147.52.119",
+          "179.167.112.99"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "3 sources",
+      "first_seen": "2015-12-11 17:26:17+00:00",
+      "last_seen": "2015-12-19 18:07:25+00:00",
+      "summary": "3 sources replayed the same 25-username list (admin, cashier, dspace, git, gpadmin, hadoop...); attempts per source: 126; active 12-11 to 12-19",
+      "iocs": {
+        "ip": [
+          "58.217.157.177",
+          "203.158.215.184",
+          "118.97.104.142"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "2 sources",
+      "first_seen": "2015-12-11 18:42:11+00:00",
+      "last_seen": "2016-01-02 14:23:52+00:00",
+      "summary": "2 sources replayed the same 7-username list (admin, root, support, telnet, test, ubnt...); attempts per source: 158, 402; active 12-11 to 01-02",
+      "iocs": {
+        "ip": [
+          "80.211.140.229",
+          "212.237.41.152"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "hunt": "dictionary_fingerprint",
+      "technique": "T1110.001",
+      "severity": "medium",
+      "entity": "2 sources",
+      "first_seen": "2015-12-13 19:13:04+00:00",
+      "last_seen": "2016-01-02 07:46:09+00:00",
+      "summary": "2 sources replayed the same 37-username list (alex, anna, desktop, ftpuser, gast, git...); attempts per source: 884; active 12-13 to 01-02",
+      "iocs": {
+        "ip": [
+          "203.190.163.125",
+          "117.52.87.214"
+        ]
+      },
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[project]
+name = "iochunter"
+version = "1.0.0"
+description = "Hypothesis-driven threat hunting and incident response over Linux auth logs and Zeek"
+requires-python = ">=3.11"
+dependencies = ["duckdb>=1.0", "pandas>=2", "numpy", "scipy", "scikit-learn>=1.4", "pyyaml"]
+
+[project.optional-dependencies]
+llm = ["google-genai>=1.0"]
+
+[project.scripts]
+iochunter = "iochunter.cli:main"
+
+[tool.setuptools]
+packages = ["iochunter"]
+[tool.setuptools.package-data]
+iochunter = ["benign_domains.txt"]
+
+[tool.ruff]
+line-length = 140
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+ignore = ["E501", "E702", "E731"]

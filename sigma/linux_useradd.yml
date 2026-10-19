@@ -1,0 +1,14 @@
+title: Local account created
+id: f0e24ba7-ae4c-5af9-9095-c92beab10178
+status: stable
+description: Any new local account on a server, for review against change tickets.
+author: Nagaraj Gireppa Kanni
+date: 2026-10-19
+tags: [attack.persistence, attack.t1136.001]
+logsource: {product: linux, service: auth}
+detection:
+  selection:
+    action: user_added
+  condition: selection
+falsepositives: [Provisioning by configuration management]
+level: medium

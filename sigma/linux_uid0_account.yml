@@ -1,0 +1,15 @@
+title: New account created with UID 0
+id: 530b09c6-cd5b-505f-a2de-327f177b0940
+status: stable
+description: A second root-equivalent account is a classic backdoor; legitimate administration almost never needs one.
+author: Nagaraj Gireppa Kanni
+date: 2026-10-19
+tags: [attack.persistence, attack.t1136.001]
+logsource: {product: linux, service: auth}
+detection:
+  selection:
+    action: user_added
+    message|contains: 'UID=0,'
+  condition: selection
+falsepositives: [None expected]
+level: critical

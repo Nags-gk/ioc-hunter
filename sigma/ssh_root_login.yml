@@ -1,0 +1,17 @@
+title: Successful SSH login as root
+id: e8e0fa41-ae13-5e37-9600-2c4c2967de28
+status: stable
+description: Direct root logins bypass per-person accountability and should be disabled (PermitRootLogin no).
+author: Nagaraj Gireppa Kanni
+date: 2026-10-19
+tags: [attack.initial_access, attack.t1078.003]
+logsource: {product: linux, service: auth}
+detection:
+  selection:
+    action: [accepted_password, accepted_publickey, session_opened]
+    user: root
+  filter_local:
+    program: [su, sudo, CRON, crond]
+  condition: selection and not filter_local
+falsepositives: [Break-glass access]
+level: medium

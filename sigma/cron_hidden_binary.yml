@@ -1,0 +1,18 @@
+title: Cron runs a hidden or temp-path binary
+id: 063355c4-6c45-5c10-842a-99df8d924103
+status: experimental
+description: Cron executing a dot-prefixed binary or anything from /tmp or /dev/shm, a common persistence pattern for miners and bots.
+author: Nagaraj Gireppa Kanni
+date: 2026-10-19
+tags: [attack.persistence, attack.t1053.003]
+logsource: {product: linux, service: cron}
+detection:
+  selection:
+    action: cron_command
+  hidden:
+    command|re: '/\.[A-Za-z0-9_-]+'
+  tmp:
+    command|contains: ['/tmp/', '/dev/shm/', '/var/tmp/']
+  condition: selection and (hidden or tmp)
+falsepositives: [Rare; some backup tools keep dot-directories]
+level: high

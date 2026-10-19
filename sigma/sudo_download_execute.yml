@@ -1,0 +1,20 @@
+title: Download or execute from a temp path through sudo
+id: 2b8224e0-0cec-513f-8a9e-abebc0c5457c
+status: experimental
+description: sudo runs curl or wget to write a file, or runs a shell or interpreter on a file in /tmp, /dev/shm or /var/tmp.
+author: Nagaraj Gireppa Kanni
+date: 2026-10-19
+tags: [attack.command_and_control, attack.t1105, attack.execution, attack.t1059.004]
+logsource: {product: linux, service: auth}
+detection:
+  sudo:
+    action: sudo_command
+  download:
+    command|contains: [curl, wget]
+  download_target:
+    command|contains: [' -o ', ' -O', '| sh', '| bash', '/tmp/', '/dev/shm/']
+  exec_tmp:
+    command|re: '(^|/)(ba)?sh\s+(/tmp|/dev/shm|/var/tmp)/'
+  condition: sudo and ((download and download_target) or exec_tmp)
+falsepositives: [Installer scripts run by administrators; check the domain]
+level: high

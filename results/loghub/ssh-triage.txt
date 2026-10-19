@@ -1,0 +1,83 @@
+== totals
+failed auth events : 366211
+failing sources    : 1011
+successful logins  : 182
+
+== top 10 guessing sources (attempts ip)
+  43150 59.63.188.30
+  34680 183.63.110.206
+  29038 183.238.178.195
+  22115 183.62.140.253
+  22115 139.219.191.138
+  21575 58.242.83.25
+  17510 183.192.189.131
+  17340 183.129.154.138
+  15012 183.63.172.52
+  12563 218.65.30.30
+
+== top 10 usernames tried
+ 316419 root
+  11114 admin
+   1086 test
+    978 oracle
+    937 support
+    674 pi
+    592 nagios
+    518 guest
+    432 postgres
+    416 0
+
+== successful logins (count ip user)
+     25 111.222.107.90 hxu
+     14 119.137.63.195 fztu
+     12 61.187.54.9 curi
+     11 137.189.241.248 curi
+     10 137.189.90.232 curi
+      9 119.137.62.123 fztu
+      7 222.240.177.42 curi
+      7 218.17.80.182 zachary
+      6 222.125.40.98 jmzhu
+      6 137.189.88.215 curi
+      6 113.116.236.34 jmzhu
+      5 218.18.42.17 suyuxin
+      5 123.255.103.215 curi
+      5 123.255.103.142 curi
+      4 14.17.22.31 curi
+      4 137.189.88.215 yuewang
+      3 183.62.156.108 fztu
+      3 137.189.204.253 hxu
+      3 112.96.33.40 jmzhu
+      3 112.96.173.55 jmzhu
+      2 203.218.70.64 xxchen
+      2 183.11.69.89 jmzhu
+      2 183.11.36.159 jmzhu
+      2 137.189.88.215 suyuxin
+      2 137.189.241.19 curi
+      2 137.189.205.44 hxu
+      2 113.99.127.215 suyuxin
+      2 113.118.187.34 fztu
+      1 73.239.249.49 tzhao
+      1 67.160.100.130 curi
+      1 218.18.43.243 suyuxin
+      1 183.62.156.108 suyuxin
+      1 183.62.156.108 jmzhu
+      1 183.11.39.245 jmzhu
+      1 137.189.240.159 xxchen
+      1 137.189.207.28 hxu
+      1 137.189.207.18 hxu
+      1 137.189.206.243 hxu
+      1 137.189.206.152 hxu
+      1 137.189.204.246 hxu
+      1 137.189.204.236 hxu
+      1 137.189.204.220 jmzhu
+      1 137.189.204.155 hxu
+      1 137.189.204.138 hxu
+      1 119.137.62.142 fztu
+      1 119.137.60.156 fztu
+
+== sources with >= 20 failures that later logged in (brute force then success)
+none
+
+== sources logging in to 3+ different accounts
+137.189.88.215: curi suyuxin yuewang
+183.62.156.108: fztu jmzhu suyuxin
