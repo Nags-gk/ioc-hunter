@@ -72,7 +72,7 @@ def executive_summary(result: dict, api_key: str | None = None) -> tuple[str, st
         client = genai.Client(api_key=key)
         facts = "\n".join(f"- [{f.severity}] {f.hunt} {f.technique}: {f.summary} ({_ts(f.first_seen)} to {_ts(f.last_seen)})" for f in sev)
         text = client.models.generate_content(
-            model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
+            model=os.environ.get("GEMINI_MODEL", "gemini-3.8-flash"),
             contents="Write a 4-sentence executive summary of this security incident for a director. Use only these facts; "
                      "do not speculate about attribution.\n" + facts).text.strip()
     except Exception as e:  # quota, network
